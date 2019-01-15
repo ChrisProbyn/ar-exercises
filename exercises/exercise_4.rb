@@ -14,3 +14,12 @@ Surrey.save
 Whistler.save
 Yaletown.save
 
+@mens_stores = Store.where(mens_apparel: true)
+
+@mens_stores.each do |store|
+    print store.name," " ,store.annual_revenue
+    puts
+end
+
+@womens_apparel = Store.where(womens_apparel: true).where("annual_revenue < ?", 1000000)
+
