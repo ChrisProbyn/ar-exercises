@@ -8,9 +8,8 @@ puts "----------"
 @store1 = Store.find(1)
 @store2 = Store.find(2)
 
-Store.update(1,name: "Chris")
 
-@store1 = Store.find(1)
+@store1.name = "Chris"
+@store1.save
 
 puts @store1.name
-puts Store.count

@@ -9,6 +9,6 @@ puts "----------"
 
 @store3 = Store.find(3)
 
+@store3.destroy
 
-Store.destroy(@store3.id)
 puts Store.count
