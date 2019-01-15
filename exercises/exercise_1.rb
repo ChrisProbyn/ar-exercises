@@ -12,4 +12,3 @@ Gastown = Store.new(name: "Gastown", annual_revenue:190000, mens_apparel: true, 
 Burnaby.save
 Richmond.save
 Gastown.save
-puts Store.count
